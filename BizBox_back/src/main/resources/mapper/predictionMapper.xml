@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bizbox.mapper.predictionMapper">
+
+	<select id="find2018Prediction" parameterType="String" resultType="prediction">
+		select * from expect2018 where trdar_cd_nm like concat('%',#{address},'%') 
+	</select>
+	<select id="find2017Prediction" parameterType="String" resultType="prediction">
+		select * from expect2017 where trdar_cd_nm like concat('%',#{address},'%') 
+	</select>
+	<select id="find2016Prediction" parameterType="String" resultType="prediction">
+		select * from expect2016 where trdar_cd_nm like concat('%',#{address},'%') 
+	</select>
+ 	
+ 	<select id="predict_business_2016" parameterType="java.util.Map" resultType="prediction">
+ 		select * from expect2016 where trdar_cd_nm = #{address} and svc_induty_cd_nm = #{business} and stdr_qu_cd = '4'
+ 	</select>
+ 	
+ 	<select id="predict_business_2017" parameterType="java.util.Map" resultType="prediction">
+ 		select * from expect2017 where trdar_cd_nm = #{address} and svc_induty_cd_nm = #{business} and stdr_qu_cd = '4'
+ 	</select>
+ 	
+ 	<select id="predict_business_2018" parameterType="java.util.Map" resultType="prediction">
+ 		select * from expect2018 where trdar_cd_nm = #{address} and svc_induty_cd_nm = #{business} and stdr_qu_cd = '4'
+ 	</select>
+ 	
+ 	<select id="getpopulation" parameterType="String" resultType="pobl">
+ 	
+ 		SELECT * FROM population_location where F like #{address} and A like '2019' limit 1;
+ 	</select>
+</mapper>

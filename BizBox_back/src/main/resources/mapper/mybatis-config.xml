@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+ 
+  <typeAliases>
+  	<typeAlias type="com.bizbox.vo.PopulationByTime"  alias="pobt"/>
+  	<typeAlias type="com.bizbox.vo.PopulationByLocation"  alias="pobl"/>
+  	<typeAlias type="com.bizbox.vo.Changebusiness"  alias="change"/>
+  	<typeAlias type="com.bizbox.vo.PopulationByDong"  alias="pobd"/>
+  	<typeAlias type="com.bizbox.vo.DongCode"  alias="dc"/>
+  	<typeAlias type="com.bizbox.vo.SalesInformation"  alias="sales"/>
+  	<typeAlias type="com.bizbox.vo.PopulationBytimeByDongCode"  alias="ptdc"/>
+  	<typeAlias type="com.bizbox.vo.Password"  alias="password"/>
+  	<typeAlias type="com.bizbox.vo.User"  alias="user"/>
+  	<typeAlias type="com.bizbox.vo.color"  alias="color"/>
+  	<typeAlias type="com.bizbox.vo.Prediction"  alias="prediction"/>
+  	<typeAlias type="com.bizbox.vo.Store"  alias="store"/>
+  	<typeAlias type="com.bizbox.vo.Point"  alias="point"/>
+  	<typeAlias type="com.bizbox.vo.PopulationByBusiness"  alias="pb"/>
+  	<typeAlias type="com.bizbox.vo.OpenClose"  alias="oc"/>
+  	<typeAlias type="com.bizbox.vo.AddressCategory"  alias="ac"/>
+  </typeAliases>
+  
+  <mappers>
+   <mapper resource="mapper/populationByMapper.xml" />
+   <mapper resource="mapper/changebusinessMapper.xml" />
+   <mapper resource="mapper/salesMapper.xml" />
+   <mapper resource="mapper/userServiceMapper.xml"/>
+   <mapper resource="mapper/passMapper.xml"/>
+   <mapper resource="mapper/predictionMapper.xml"/>
+   <mapper resource="mapper/storeMapper.xml"/>
+   <mapper resource="mapper/populationByBusinessMapper.xml"/>
+   <mapper resource="mapper/openCLoseMapper.xml"/>
+  </mappers>
+</configuration>

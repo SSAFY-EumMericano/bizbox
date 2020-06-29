@@ -1,0 +1,33 @@
+.form-container {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px 0;
+}
+
+form {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+div.v-tab.v-tab--active {
+  background-color: #ffffff;
+  border-bottom: 2px solid rgb(232, 113, 91);;
+  z-index: 2;
+}
+
+div.v-tab {
+  background-color: grey;
+}
+
+.closeButton {
+  background-color: #0f425f;
+  padding: 12px 0;
+  font-sizE: 1.5em;
+}
+
+div.v-tab.v-tab--active span {
+  color: #34256b;
+  font-weight: bold;
+}
+

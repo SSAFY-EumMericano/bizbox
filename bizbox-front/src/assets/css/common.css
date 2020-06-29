@@ -1,0 +1,75 @@
+#app {
+    text-align: center;
+    color: #000000;
+}
+
+h1 {
+    font-size: 33px;
+}
+
+h2 {
+    font-size: 27px;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+h4 {
+    font-size: 19px;
+}
+
+/* Only for routerview container */
+/* .viewcontainer {
+    flex: 1;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: stretch;
+    flex-direction: column;
+} */
+
+div.v-input__control {
+    color: #455054;
+}
+
+.biz-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+.biz-item-1 {
+    flex: 1;
+}
+
+.biz-item-center-1 {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+
+.m-8px {
+    margin: 8px
+}
+
+.res-margin {
+    margin-top: 56px;
+}
+
+@media (min-width:700px) {
+    .container {
+        display: -webkit-flex;
+        display: flex;
+    }
+    .res-margin {
+        margin-top: 64px;
+    }
+}
+div.v-toolbar__content {
+    color: #ffffff;
+    background-color: transparent;
+}
+

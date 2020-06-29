@@ -1,0 +1,34 @@
+.margin-hor {
+    margin: 0 5%
+}
+
+.mt {
+    margin-top: 56px;
+}
+
+.inner-item {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.margin-hor h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 700px) {
+    .margin-hor {
+        margin: 0 10%
+    }
+    .mt {
+        margin-top: 64px;
+    }
+    .inner-item {
+        margin: 0 5%
+    }
+}
